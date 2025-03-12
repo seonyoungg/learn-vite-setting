@@ -2,18 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/pretendard/woff2/PretendardVariable.woff2"
+      type="font/woff2"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/font/pretendard/pretendardvariable.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/suit/SUIT-Variable.woff2"
+      type="font/woff2"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/suit/SUIT-Variable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="font-suit">
+  <body>
     <div class="p-12 flex flex-col items-center gap-8">
       <h1 class="btn-default">Vite 환경의 구성</h1>
       <ul
         class="border-1 border-gray-300 shadow-lg p-4 min-w-[300px] flex flex-col gap-4">
         <li class="lists-item hover:text-blue-400 hover:font-semibold">
           <a href="./src/pages/login.html">로그인페이지</a>
+        </li>
+        <li class="lists-item">
+          <span>폰트설정</span>
+          <p class="indent-9 font-sans mt-2">PRETENDARD 프리텐다드</p>
+          <p class="indent-9 font-suit">SUIT 수트</p>
         </li>
       </ul>
     </div>
