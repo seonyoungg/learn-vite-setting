@@ -8,12 +8,12 @@
 
 @layer components {
   .btn-default {
-    @apply rounded-3xl bg-blue-600 text-white inline-flex px-6 py-2 text-xl;
+    @apply rounded-3xl bg-blue-600 text-white inline-flex px-6 py-2 text-xl
   }
 
   .lists-item::before {
     content: "⭐";
-    @apply mr-2;
-    /* @apply absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2;  */
+    @apply mr-2
+    /* @apply absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2;  */;
   }
 }
