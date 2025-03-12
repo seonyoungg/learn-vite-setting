@@ -4,9 +4,43 @@
   --font-*: initial;
   --font-sans: "Pretendard Variable", sans-serif;
   --font-suit: "SUIT Variable", sans-serif;
+
+  /* Color */
+  --color-apple-black100: #272729;
+  --color-apple-red: #d11719;
+  --color-apple-gray: #86868b;
+  --color-apple-blue100: #2997ff;
+  --color-apple-blue200: #0077ed;
+  --color-apple-blue300: #0071e3;
+  --color-apple-blue400: #006edb;
+
+  /* size */
+  --card-size: 31.25rem;
+
+  /* spacing */
+  --spacing-15: 3.75rem;
+
+  /* images */
+  --ipad-pro:url('./apple/ipad_pro.jpeg');
+  --ipad-pro-wide:url('./apple/ipad_pro_wide.jpeg');
+
+  /* 1배율/2배율 */
+  --ipad-pro-set: image-set(
+    url('./apple/ipad_pro.jpeg') 1x,
+    url('./apple/ipad_pro_2x.jpeg') 2x
+  );
+
+  /* Text Size */
+  --text-17:1.0625rem;
+  --text-19: 1.1875rem;
+  --text-21:1.3125rem;
+  --text-32: 2rem; 
+  --text-40: 2.5rem; 
 }
 
 @layer components {
+
+  /* Index.html */
   .btn-default {
     @apply rounded-3xl bg-blue-600 text-white inline-flex px-6 py-2 text-xl
   }
@@ -15,5 +49,15 @@
     content: "⭐";
     @apply mr-2
     /* @apply absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2;  */;
+  }
+
+  /* apple-card.html */
+  .apple-card{
+    @apply h-(--card-size) pt-10 flex flex-col items-center gap-2 lg:gap-3 bg-no-repeat bg-center bg-cover
+  }
+
+  /* apple.html */
+  .card-container > *:nth-child(odd) {
+    @apply bg-green-700 text-white; /* Tailwind의 유효한 색상 */
   }
 }
