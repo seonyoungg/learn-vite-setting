@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import './assets/font/pretendard/pretendardvariable.css';
+@import '@/assets/font/notoserif/notoserif.css';
+@import '@/assets/font/suit/SUIT-Variable.css';
+
+
+@theme {  /* 기본 font-family 설정("Pretendard Variable") */
+  --font-*: initial;
+  --font-sans: 'Pretendard Variable', sans-serif;
+  --font-serif: 'Noto Serif KR', serif;
+  --font-suit: 'SUIT Variable', sans-serif;
+}
+
+@layer components{
+  .test{
+    @apply text-5xl  text-red-300
+  }
+}
